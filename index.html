@@ -15,28 +15,29 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- header -->
     <header>
-      <div class="container header-parent">
-        <a href="./index.html" class="logo black"><span class="logo blue">Web</span>Studio</a>
+      <div class="page-header container">
+        <a href="./index.html" class="logo logo--black"><span class="logo logo--blue">Web</span>Studio</a>
         <nav class="navig">
-          <ul class="navigation list-style-none navigation-parent">
-            <li><a href="./index.html" class="navigation-link agencja">Agencja</a></li>
-            <li><a href="./portfolio.html" class="navigation-link">Portfolio</a></li>
-            <li><a href="" class="navigation-link">Kontakt</a></li>
+          <ul class="navigation list-style-none">
+            <li><a href="./index.html" class="navigation__link navigation__link--marked">Agencja</a></li>
+            <li><a href="./portfolio.html" class="navigation__link">Portfolio</a></li>
+            <li><a href="" class="navigation__link">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="nav-links-parent list-style-none">
+        <ul class="contacts-header list-style-none">
           <li>
-            <a href="mailto:info@devstudio.com" class="icon-with-text">
-              <svg class="icon-nav" width="16" height="12">
+            <a href="mailto:info@devstudio.com" class="contacts-header__link">
+              <svg class="contacts-header__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
           <li>
-            <a href="tel:+48111111111" class="icon-with-text">
-              <svg class="icon-nav" width="10" height="16">
+            <a href="tel:+48111111111" class="contacts-header__link">
+              <svg class="contacts-header__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -46,58 +47,57 @@
       </div>
     </header>
     <main>
-      <section class="sec-1-index">
-        <div class="container sec-1-parent">
-          <h1 class="title-sec-1-index sec-1-item">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button type="button" class="but-sec-1-index sec-1-item modal-open" data-modal-open>Zamów usługę</button>
-        </div>
+      <!-- section 1 -->
+      <section class="order">
+        <h1 class="order__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+        <button type="button" class="order__button modal-open" data-modal-open>Zamów usługę</button>
       </section>
-      <section class="section sec-2">
-        <div class="container">
-          <ul class="list-style-none sec-2-parent">
-            <li class="sec-2-item">
-              <svg class="icon-our-assets" width="270" height="120">
-                <use href="./images/icons.svg#icon-satelite"></use>
-              </svg>
-              <h4 class="header4-sec-2-index">LOREM IPSUM</h4>
-              <p class="par-sec-2-index">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum
-                et malesuada
-              </p>
-            </li>
-            <li class="sec-2-item">
-              <svg class="icon-our-assets" width="270" height="120">
-                <use href="./images/icons.svg#icon-clock"></use>
-              </svg>
-              <h4 class="header4-sec-2-index">LOREM IPSUM</h4>
-              <p class="par-sec-2-index">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum
-                et malesuada
-              </p>
-            </li>
-            <li class="sec-2-item">
-              <svg class="icon-our-assets" width="270" height="120">
-                <use href="./images/icons.svg#icon-laptop"></use>
-              </svg>
-              <h4 class="header4-sec-2-index">LOREM IPSUM</h4>
-              <p class="par-sec-2-index">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum
-                et malesuada
-              </p>
-            </li>
-            <li class="sec-2-item">
-              <svg class="icon-our-assets" width="270" height="120">
-                <use href="./images/icons.svg#icon-astronaut"></use>
-              </svg>
-              <h4 class="header4-sec-2-index">LOREM IPSUM</h4>
-              <p class="par-sec-2-index">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum
-                et malesuada
-              </p>
-            </li>
-          </ul>
-        </div>
+      <!-- section 2 -->
+      <section class="services section container">
+        <ul class="services__list list-style-none">
+          <li class="services__item">
+            <svg class="services__icon" width="270" height="120">
+              <use href="./images/icons.svg#icon-satelite"></use>
+            </svg>
+            <h4 class="services__name">LOREM IPSUM</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum
+              et malesuada
+            </p>
+          </li>
+          <li class="services__item">
+            <svg class="services__icon" width="270" height="120">
+              <use href="./images/icons.svg#icon-clock"></use>
+            </svg>
+            <h4 class="services__name">LOREM IPSUM</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum
+              et malesuada
+            </p>
+          </li>
+          <li class="services__item">
+            <svg class="services__icon" width="270" height="120">
+              <use href="./images/icons.svg#icon-laptop"></use>
+            </svg>
+            <h4 class="services__name">LOREM IPSUM</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum
+              et malesuada
+            </p>
+          </li>
+          <li class="services__item">
+            <svg class="services__icon" width="270" height="120">
+              <use href="./images/icons.svg#icon-astronaut"></use>
+            </svg>
+            <h4 class="services__name">LOREM IPSUM</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum
+              et malesuada
+            </p>
+          </li>
+        </ul>
       </section>
+      <!-- section 3 -->
       <section class="section">
         <div class="container">
           <h2 class="header2-sec-3-index">Czym się zajmujemy</h2>
@@ -315,7 +315,7 @@
     <footer class="foot">
       <div class="container foot-parent">
         <div>
-          <a href="./index.html" class="logo white"><span class="logo blue">Web</span>Studio</a>
+          <a href="./index.html" class="logo logo--white"><span class="logo logo--blue">Web</span>Studio</a>
           <address class="addr">
             <ul class="list-style-none addr-list">
               <li>
